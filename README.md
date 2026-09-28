@@ -1,8 +1,8 @@
-# karel-starter
+# Karel the Robot
 
-This folder holds a robot. You are going to spend four weeks with it.
 
-You do not need to know anything about Java to use this. Half the people reading this have never written a line of code, and that is fine. Karel understands four commands, and you will have written a working program inside of ten minutes.
+My work from the Karel weeks of COSC 10001 at TCU. 
+Karel is a robot with very limited knowlage, that only knows 4 commands.
 
 ## What is in here
 
