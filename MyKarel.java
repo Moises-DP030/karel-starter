@@ -38,6 +38,10 @@ public class MyKarel extends Karel {
         // The beeper is two squares east and one square north of where Karel starts.
         //
         // Three more lines will do it. Add them below.
+        turnLeft();
+        move();
+        pickBeeper();
+        turnRight();
 
     }
     public void turnRight(){
