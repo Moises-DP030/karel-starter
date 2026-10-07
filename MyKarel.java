@@ -27,10 +27,6 @@ public class MyKarel extends Karel {
         // Right now Karel takes two steps and stops. Run it and watch.
         move();
         move();
-        move();
-
-
-
 
 
         // YOUR TASK: get Karel to the beeper and pick it up.
@@ -43,57 +39,11 @@ public class MyKarel extends Karel {
         pickBeeper();
         turnRight();
 
-
-        //MyOwnMap solution
-
-         public void run() {
-        label32:
-        while(true) {
-            if (!this.beepersPresent()) {
-                if (this.rightIsClear()) {
-                    this.turnRight();
-                    this.move();
-                } else if (this.frontIsClear()) {
-                    this.move();
-                } else if (this.leftIsClear()) {
-                    this.turnLeft();
-                } else {
-                    this.turnAround();
-                }
-
-                if (!this.beepersPresent()) {
-                    continue;
-                }
-
-                int i = 1;
-
-                do {
-                    if (i > 10) {
-                        continue label32;
-                    }
-
-                    ++i;
-                    this.pickBeeper();
-                } while(!this.noBeepersPresent());
-
-                this.turnRight();
-                return;
-            }
-
-            return;
-        }
     }
 
-    }
     public void turnRight(){
-
         turnLeft();
         turnLeft();
         turnLeft();
-
-    }
-    public void turnAround() {
-        this.turnLeft();
-        this.turnLeft();
     }
 }
